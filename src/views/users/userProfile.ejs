@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <html lang="en">
+        <%- include('../partials/head') %>
+        <body style="background-color: <%=user.userColor ? user.userColor : "white" %>;">
+            <%- include('../partials/header') %>
+    <main class="user_profile_main">
+        <section class="user-section">
+            <div class="user-div-box">
+                <div class="user_info_box">
+                    <p>Hola <%= user.name %></p>
+                </div>
+                <div class="user_info_box">
+                    <p> Elegiste el color:
+                        <%= user.userColor == "red" ? "Rojo" : 
+                        user.userColor == "yellow" ? "Amarillo" : 
+                        user.userColor == "green" ? "Verde" : 
+                        user.userColor== "violet" ? "Violeta" : 
+                        user.userColor == "black" ? "Negro" :
+                        user.userColor == "blue" ? "Azul" : "white"
+                        %>
+                    </p>
+                </div>
+                <div class="user_info_box">
+                    <p>Tu email es: <%=user.email %></p>
+                </div>
+                <div class="user_info_box">
+                    <p>Tu edad es: <%= user.age %></p>
+                </div>
+                <div class="user_info_box">
+                    <p><a href="/users/message">Página final</button></p>
+                </div>
+                <% if(user.userColor){ %>
+                    <button><a href="/users/clearColor">Olvidar color</a></button>
+                    <% } else { %>
+                    <% } %>
+            </div>
+            
+        </section>
+    </main>
+</body>
+</html>

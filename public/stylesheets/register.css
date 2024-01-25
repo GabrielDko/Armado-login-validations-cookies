@@ -1,0 +1,44 @@
+.register-body {
+    background-image: url('/images/background-page.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.registerform-section {
+    background-color: var(--color-SpringGreen);
+    margin: auto;
+    width: 50%;
+    border-radius: 5%;
+    
+    
+}
+.remember-box  {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 50%;
+    gap: 5px;
+}
+.remember-box label {
+    color: #fff;
+
+}
+.registerform-section form{
+    margin: 20% 0;
+}
+
+.input-data, .button-register {
+
+    padding: 2% 0;
+    flex-direction: column;
+    display: flex;
+    width: 50%;
+    margin: auto;
+}
+.button-register button{
+    background-color: var(--color-DarkCyan);
+    color: #fff;
+}
+.registerform-section form .input-data label{
+    color: #fff;
+}

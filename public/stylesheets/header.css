@@ -1,0 +1,51 @@
+.header-page {
+    background-color: var(--color-DarkCyan);
+    color: #fff;
+}
+.header-page div a, p {
+    color: #fff;
+
+}
+.input-search-bar {
+    border-radius: 20px;
+}
+.image-header-box img {
+    border-radius: 100%;
+    width: 35%;
+}
+.description-header{
+    font-size: 12px;
+    text-align: center;
+
+}
+.top-navBar {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.top-navBar div {
+    width: 36%;
+    
+}
+.top-navBar div input {
+    width: 80%;
+    padding: 1vw;
+}
+.header-nav {
+    align-items: center;
+    font-size: 12px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 1%;
+    background-color: var(--color-Teal);
+}
+.header-nav div.bottom-navBar ul{
+    display: flex;
+}
+
+.list-item {
+    display: flex;
+    text-align: center;
+    padding: 5px;
+}

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/head') %>
+    <%if(locals.user){ %>
+        <body style="background-color: <%-user.userColor ? user.userColor : "white" %>;">
+          <% } else { %>
+            <body>
+              
+            <% } %>
+    <%- include('./partials/header') %>
+      
+    <main class="final_message_main">
+        <section class="final_message_section">
+            <p> <%= user.name %>, gracias por visitarnos</p>
+        </section>
+    </main>
+</body>
+</html>

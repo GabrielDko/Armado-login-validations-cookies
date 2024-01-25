@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/head') %>
+<body>
+    <%- include('../partials/header') %>
+
+    <main class="login-main-body">
+        <form action="/users/login" class="login-form" method="POST">
+            <div class="input-data">
+                <label for="name">Ingrese su nombre</label>
+                <input type="text" name="name" id="name" value="<%= locals.oldData && oldData.name ? oldData.name : null %>">
+                <p><%= locals.errors && errors.name ? errors.name.msg : null %></p>
+            </div>
+            <div class="login-data">
+                <select name="color" id="color">
+                    <option value="">Elije un color</option>
+                    <option value="red">Rojo</option>
+                    <option value="blue">Azul</option>
+                    <option value="green">Verde</option>
+                    <option value="yellow">Amarillo</option>
+                    <option value="violet">Violeta</option>
+                    <option value="black">Negro</option>
+                    
+                </select>
+                <div>
+                    <p><%= locals.errors && errors.color ? errors.color.msg : null %></p>
+                </div>
+            </div>
+            <div class="remember-text">
+                <label for="rememberColor">Recordar color</label>
+                <input type="checkbox" name="rememberColor" id="rememberColor" <%- locals.oldData && oldData.rememberColor ? "checked" : null %>>
+                </div>
+            <div class="input-data">
+                <label for="name">Ingrese su edad</label>
+                <input type="number" name="age" id="age" value="<%= locals.oldData && oldData.age ? oldData.age : null %>">
+                <div>
+                <p><%= locals.errors && errors.age ? errors.age.msg : null %></p>
+                </div>
+            </div>
+            <div class="input-data">
+                <label for="email">Ingrese su Correo electrónico</label>
+                <input type="email" name="email" id="email" value="<%= locals.oldData && oldData.email ? oldData.email : null %>">
+            </div>
+            <div class="login-data">
+                <label class="label-description" for="password">Contraseña</label>
+                <input type="password" name="password" id="password">
+            </div>
+            <div class="remember-text">
+                <label for="rememberMe">Recordame</label>
+                <input type="checkbox" name="remember" id="rememberMe">
+                <% if(locals.errors && errors.email){ %>
+                    <p><%= errors.email.msg  %></p>
+                    <% } %>
+    
+                <% if(locals.errors && errors.password){ %>
+                    <p><%= errors.password.msg  %></p>
+                <% } %>
+            </div>
+            <div class="button-login-form">
+                <button type="submit">Ingresar</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

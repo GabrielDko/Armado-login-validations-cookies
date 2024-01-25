@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <%- include('./partials/head.ejs') %>
+  <%if(locals.user){ %>
+  <body style="background-color: <%-user.userColor ? user.userColor : "white" %>;">
+    <% } else { %>
+      <body>
+        
+      <% } %>
+    
+  <%- include('./partials/header.ejs') %>
+
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+  </body>
+</html>

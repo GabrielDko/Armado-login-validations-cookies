@@ -1,0 +1,58 @@
+.user-div-box img {
+    width: 25%;
+}
+.user-section .user-div-box{
+    text-align: center;
+    margin: auto;
+}
+
+.user-section {
+    background-color: var(--color-DarkCyan);
+    width: 50%;
+    margin: auto;
+    border-radius: 15px;
+
+}
+.user_info_box p{
+    font-size: 15px;
+    font-weight: 900;
+    color: #FFF;
+    animation: user_info 3000ms infinite;
+}
+@keyframes user_info {
+    0% {color: #23c3cf;}
+    50% {color: #d40b2f;}
+    100% {color: #23c3cf;}
+}
+.user_info_box {
+    padding: 10px 0;
+}
+.user_profile_main{
+    padding: 10px;
+    margin: 10% 0;
+}
+
+.user-div-box p {
+    font-size: 15px;
+    color: black;
+}
+
+.user-div-box input {
+    border-radius: 10%;
+}
+
+.input-box {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-box input {
+    width: 25%;
+}
+
+.header-image-user {
+    border-radius: 100%;
+    width: 10%;
+    
+}
